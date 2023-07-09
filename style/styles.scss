@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
 
-*,*::after,*::before{
+/* MIXINS START */
+@mixin c-font {
+    font-family: 'Agdasima', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MIXINS END */
+
+
+/* Globals START */
+ 
+* ,*::after,*::before{
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    font-family: 'Agdasima';
+    @include c-font;
 }
 
 html {
     box-sizing: border-box;
 }
-/* Globals */
+
+/* Globals END */
 a{
     margin: 0;
     padding: 0;
@@ -41,7 +50,7 @@ marquee > * {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    // @include c-font;
 }
 
 .c_container {
