@@ -1,8 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  let product = false;
-
   new Splide('#top_splide', {
     perPage: 3,
     movePage: 1,
@@ -14,8 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
         gap    : '.7rem',
         height : 'auto',
       },
+      1025: {
+        perPage: 3,
+        gap    : '7rem',
+        height : 'auto',
+      },
       768: {
         perPage: 2,
+        gap    : '.7rem',
+        height : 'auto',
+      },
+      426: {
+        perPage: 1,
         gap    : '.7rem',
         height : 'auto',
       },
@@ -37,6 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
         gap    : '.7rem',
         height : 'auto',
       },
+      426: {
+        perPage: 1,
+        gap    : '.7rem',
+        height : 'auto',
+      },
     },
   }).mount();
 
@@ -54,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.side_img').on('click',function(){
     let src = $(this).attr('data-url');
     let arr = src.split('.');
-    console.log(src);
 
     if(arr[1] == 'mp4'){
       $('#main_view_img').addClass('c_hidden');
@@ -98,15 +110,21 @@ document.addEventListener('DOMContentLoaded', function () {
     $('#FAQs-pos').toggleClass('c_hidden');
   });
 
+
   $('#contact-btn').on('click',(e)=>{
     e.preventDefault();
-    
     $('#contact-pos').toggleClass('c_hidden');
   });
 
   $('#contact-close').on('click',()=>{
     $('#contact-pos').toggleClass('c_hidden');
   });
+
+  $('#contact-us-btn').click((e)=>{
+    e.preventDefault();
+    $('#contact-pos').toggleClass('c_hidden');
+    window.scrollTo(0, 0);
+  })
 
   $('#review-btn').on('click',(e)=>{
     e.preventDefault();

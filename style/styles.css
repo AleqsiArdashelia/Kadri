@@ -1,19 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Agdasima&display=swap");
 /* MIXINS START */
 /* MIXINS END */
-/* Globals START */
-*, *::after, *::before {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-  font-family: "Agdasima", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-/* Globals END */
+/* Globals */
 a {
   margin: 0;
   padding: 0;
@@ -42,6 +30,7 @@ marquee > * {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto";
 }
 
 .c_container {
@@ -200,4 +189,74 @@ marquee > * {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+#contact_divider {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Globals */
+  a {
+    font-size: 1.1rem !important;
+  }
+  /* -- */
+  /* Pop-ups */
+  #about-us > div,
+  #FAQs-pos > div,
+  #contact-pos > div {
+    width: 90% !important;
+  }
+  #contact-pos > div > div:last-child {
+    flex-direction: column-reverse !important;
+  }
+  #contact-post > div > div:last-child > div {
+    height: auto;
+    margin-bottom: 1rem !important;
+  }
+  #contact_divider {
+    display: block !important;
+  }
+  /* -- */
+  /* Header */
+  .c_header > div:first-child > img {
+    height: 25px !important;
+  }
+  /* -- */
+  /* Products */
+  #products_list > div {
+    width: 100% !important;
+    /* -webkit-box-shadow: 0 3px 5px #33333300 !important;
+    -moz-box-shadow: 0 3px 5px #33333300 !important;
+    box-shadow: 0 3px 5px #33333300 !important; */
+    overflow: hidden;
+  }
+  #product_list > div > a > img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 15px !important;
+  }
+  /* Contact Us */
+  #support_big_cam_img {
+    flex-direction: column !important;
+  }
+  #support_big_cam_img img {
+    display: none !important;
+  }
+  #support_big_cam_img > div > div > a {
+    padding: 0.5rem 1rem !important;
+    font-size: 16px;
+  }
+  /* -- */
+  /* Footer */
+  #footer > div {
+    flex-direction: column;
+  }
+  #footer > div > div:first-child {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  /* -- */
 }/*# sourceMappingURL=styles.css.map */
