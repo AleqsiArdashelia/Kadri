@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         gap    : '7rem',
         height : 'auto',
       },
-      768: {
+      975: {
         perPage: 2,
         gap    : '.7rem',
         height : 'auto',
       },
-      426: {
+      750: {
         perPage: 1,
-        gap    : '.7rem',
+        gap    : '0',
         height : 'auto',
       },
     },
@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
         gap    : '.7rem',
         height : 'auto',
       },
-      768: {
+      992: {
         perPage: 2,
         gap    : '.7rem',
         height : 'auto',
       },
-      426: {
+      766: {
         perPage: 1,
         gap    : '.7rem',
         height : 'auto',
@@ -90,55 +90,63 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.close-product-parrent').addClass('c_hidden');
   });
 
-  $('#about-us-btn').on('click',(e)=>{
+  $('.about-us-btn').on('click',(e)=>{
     e.preventDefault();
     
-    $('#about-us').toggleClass('c_hidden');
+    $('.about-us').toggleClass('c_hidden');
+    window.scrollTo(0, 0);
   });
 
-  $('#about-us-close').on('click',()=>{
-    $('#about-us').toggleClass('c_hidden');
+  $('.about-us-close').on('click',()=>{
+    $('.about-us').toggleClass('c_hidden');
   });
 
-  $('#faqs-btn').on('click',(e)=>{
+  $('.faqs-btn').on('click',(e)=>{
     e.preventDefault();
     
-    $('#FAQs-pos').toggleClass('c_hidden');
+    $('.FAQs-pos').toggleClass('c_hidden');
+    window.scrollTo(0, 0);
   });
 
-  $('#faqs-close').on('click',()=>{
-    $('#FAQs-pos').toggleClass('c_hidden');
+  $('.faqs-close').on('click',()=>{
+    $('.FAQs-pos').toggleClass('c_hidden');
   });
 
 
-  $('#contact-btn').on('click',(e)=>{
+  $('.contact-btn').on('click',(e)=>{
     e.preventDefault();
-    $('#contact-pos').toggleClass('c_hidden');
+    $('.contact-pos').toggleClass('c_hidden');
+    window.scrollTo(0, 0);
+
   });
 
-  $('#contact-close').on('click',()=>{
-    $('#contact-pos').toggleClass('c_hidden');
+  $('.contact-close').on('click',()=>{
+    $('.contact-pos').toggleClass('c_hidden');
   });
 
-  $('#contact-us-btn').click((e)=>{
+  $('.contact-us-btn').click((e)=>{
     e.preventDefault();
-    $('#contact-pos').toggleClass('c_hidden');
+    $('.contact-pos').toggleClass('c_hidden');
     window.scrollTo(0, 0);
   })
 
-  $('#review-btn').on('click',(e)=>{
+  $('.review-btn').on('click',(e)=>{
     e.preventDefault();
     
-    $('#review-pos').toggleClass('c_hidden');
+    $('.review-pos').toggleClass('c_hidden');
   });
 
-  $('#review-close').on('click',()=>{
-    $('#review-pos').toggleClass('c_hidden');
+  $('.review-close').on('click',()=>{
+    $('.review-pos').toggleClass('c_hidden');
   });
 
   $('.submit-review').on('click',(e)=>{
     e.preventDefault;
     $('#review-pos').toggleClass('c_hidden');
+  });
+
+  $('.onTop').click(()=>{
+    window.scrollTo(0,0);
   });
 
 });
