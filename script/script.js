@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gap    : '.7rem',
         height : 'auto',
       },
-      750: {
+      650: {
         perPage: 1,
         gap    : '0',
         height : 'auto',
@@ -82,12 +82,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('.product_show').on('click',()=>{
     $('.show-product').removeClass('hide-product');
-    $('.close-product-parrent').removeClass('c_hidden');
+    $('.close-product-parent').removeClass('c_hidden');
+    $('#our-product-list').addClass('c_hidden');
   });
 
   $('.close-product').on('click',()=>{
     $('.show-product').addClass('hide-product');
-    $('.close-product-parrent').addClass('c_hidden');
+    $('.close-product-parent').addClass('c_hidden');
+    $('#our-product-list').removeClass('c_hidden');
   });
 
   $('.about-us-btn').on('click',(e)=>{
