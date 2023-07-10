@@ -59,7 +59,8 @@ marquee > * {
   z-index: 10;
 }
 
-#description, #tech_specs {
+#description,
+#tech_specs {
   cursor: pointer;
 }
 
@@ -201,6 +202,44 @@ marquee > * {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  /* Product Review */
+  .prod-review {
+    flex-direction: column !important;
+  }
+  .prod-review-topside {
+    flex-direction: column-reverse !important;
+  }
+  .prod-review-topside > div:first-child {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+  }
+  .prod-review-topside > div:first-child > * {
+    margin: 0;
+    padding: 0;
+    margin-left: 0.6rem;
+  }
+  .prod-review-topside > div:last-child > img,
+  .prod-review-topside > div:last-child > iframe {
+    width: 300px !important;
+  }
+  .product-prebot > div:first-child {
+    flex-direction: column-reverse !important;
+  }
+  .product-prebot > div:first-child > div:last-child img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .product-review-bot {
+    flex-direction: column !important;
+  }
+  .product-review-bot > div {
+    width: 90% !important;
+  }
+  /* -- */
+}
 @media only screen and (max-width: 600px) {
   /* Globals */
   :root {
@@ -213,7 +252,8 @@ marquee > * {
   /* Pop-ups */
   #about-us > div,
   #FAQs-pos > div,
-  #contact-pos > div {
+  #contact-pos > div,
+  #review-pos > div {
     width: 90% !important;
   }
   #contact-pos > div > div:last-child {
@@ -225,6 +265,14 @@ marquee > * {
   }
   #contact_divider {
     display: block !important;
+  }
+  #review-pos > div > div:last-child {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #review-pos > div > div:last-child > div:last-child {
+    justify-content: center !important;
+    align-items: center !important;
   }
   /* -- */
   /* Header */
@@ -265,6 +313,11 @@ marquee > * {
     align-items: center !important;
   }
   /* -- */
+  /* Flags */
+  .flags {
+    padding: 0px !important;
+  }
+  /*  */
 }
 @media only screen and (max-width: 520px) {
   .c_header {
