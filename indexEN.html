@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ka">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <!--  -->
 
     <!-- BOOTSTRAP  ICONS -->
@@ -18,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
     <!--  -->
 
-    <!-- SPLIDER.JS -->
+    <!-- SPLIDEJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css">
     <!--  -->
@@ -50,10 +54,10 @@
 
     <div class="d-flex justify-content-end align-items-end pe-5 flags">
         <div class="d-flex justify-content-start align-items-start" style="z-index: 1;">
-            <a href="indexGEO.html">
+            <a href="index.html">
                 <img src="imgs/geo.png" alt="Georgian version" width="24px" height="auto">
             </a>
-            <a href="index.html" class="ms-3">
+            <a href="en/index.html" class="ms-3">
                 <img src="imgs/eng.png" alt="English version" width="24px" height="auto">
             </a>
         </div>
@@ -317,8 +321,8 @@
                 <div class="w-25 mt-5">
                     <p class="m-0 mb-1 text-white-50">Header</p>
                     <input type="text" class="form-control" placeholder="Header"">
-                        </div>
-                        <div class=" w-50 mt-3 text-white-50">
+                    </div>
+                    <div class=" w-50 mt-3 text-white-50">
                     <p class="m-0 mb-1">Review</p>
                     <textarea class="form-control" rows="6" placeholder="Type your review here"></textarea>
                 </div>
@@ -365,7 +369,7 @@
 
         <!-- PRODUCT REVIEW Start -->
 
-        <div class="d-flex justify-content-between align-items-start my-5 show-product hide-product prod-review">
+        <div class="d-flex justify-content-between align-items-xl-start my-5 show-product hide-product prod-review">
             <a href="#" id="#product"></a>
             <div class="d-flex prod-review-topside">
                 <div class="d-flex flex-column justify-content-start align-items-start">
@@ -379,7 +383,7 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="px-5 d-flex flex-column">
+                <div class="px-5 d-flex flex-column align-items-center">
                     <!-- Main Image -->
                     <img src="imgs/1.jpg" alt="" width="440px" height="auto" id="main_view_img">
                     <iframe src="" frameborder="0" class="c_hidden" id="main_view_vid"
@@ -417,9 +421,9 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column justify-content-start align-items-start w-100">
-                <h3 style="font-weight: 700;">Ricoh FF-70</h3>
-                <p style="font-weight: 600;">400₾ <del style="color: #535353;">540₾</del></p>
+            <div class="d-flex flex-column  w-100">
+                <h3 style="font-weight: 700;" class="text-center">Ricoh FF-70</h3>
+                <p style="font-weight: 600;" class="text-center">400₾ <del style="color: #535353;">540₾</del></p>
                 <ul class="m-0 p-0">
                     <li class="d-flex align-items-center">
                         <span class="material-symbols-outlined" style="font-size: 36px;">camera</span>
@@ -458,18 +462,18 @@
     <!-- MIDDLE INFO FIELD MARQUEE START -->
 
     <!-- <div class="dark-section">
-            <marquee>
-                <pre
-                    class="m-0 p-0">USE CODE FRYDAY50 FOR 50% OFF      USE CODE FRYDAY50 FOR 50% OFF       USE CODE FRYDAY50 FOR 50% OFF       USE CODE FRYDAY50 FOR 50% OFF</pre>
-            </marquee>
-        </div> -->
+        <marquee>
+            <pre
+                class="m-0 p-0">USE CODE FRYDAY50 FOR 50% OFF      USE CODE FRYDAY50 FOR 50% OFF       USE CODE FRYDAY50 FOR 50% OFF       USE CODE FRYDAY50 FOR 50% OFF</pre>
+        </marquee>
+    </div> -->
 
     <!-- MIDDLE INFO FIELD MARQUEE END -->
 
     <div class="c_container mb-5 mt-5">
         <div class="w-100 d-flex flex-column justify-content-center align-items-center show-product hide-product">
             <h2><b>What's included</b></h2>
-            <div class="d-flex justify-content-evenly align-items-center w-100 mt-5">
+            <div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-center w-100 mt-5">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <!-- <img src="imgs/DSLR.svg" alt=""> -->
                     <span class="material-symbols-outlined" style="font-size: 88px;">photo_camera</span>
@@ -482,7 +486,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <span class="material-symbols-outlined" style="font-size: 88px;font-weight: 500;">backpack</span>
-                    <small>Backpack</small>
+                    <small>bag</small>
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <span class="material-symbols-outlined" style="font-size: 88px;font-weight: 500;">shield</span>
@@ -508,28 +512,30 @@
             <div class="d-flex justify-content-between align-items-center mt-3 product-review-bot">
                 <div class="d-flex flex-column" style="width: 30%;">
                     <img src="imgs/1_shot_2.jpg" alt="" width="300" height="auto" class="fit_img rounded_borders_15">
-                    <h4 class="mt-2"><b>Super powered.</b></h4>
-                    <p class="w-100 line_height">Z 5 is powered by Nikon’s fast, comprehensive EXPEED 6 image processing
-                        system. It’s the secret behind the camera’s sensational photo and video quality, autofocus
-                        performance, low-light capabilities, distortion control, image clarity, color reproduction and
-                        more.
+                    <h4 class="mt-2"><b>Unleash Your Artistic Vision.</b></h4>
+                    <p class="w-100 line_height">The Ricoh FF-70 empowers you with versatile shooting capabilities,
+                        including manual control and creative filters. Take full control of exposure settings, aperture,
+                        and shutter speed, or experiment with an array of built-in filters to add unique artistic
+                        touches to your shots. Unleash your creativity and create captivating images that tell your
+                        story.
                     </p>
                 </div>
                 <div class="d-flex flex-column" style="width: 30%;">
                     <img src="imgs/1_shot_1.jpg" alt="" width="300" height="auto" class="fit_img rounded_borders_15">
-                    <h4 class="mt-2"><b>The stability you crave.</b></h4>
-                    <p class="w-100 line_height">Sharpness starts with stability, and Z 5 has one of the best in-camera
-                        image stabilization systems available. NIKKOR Z lenses activate 5-axis VR image stabilization—up
-                        to five stops* of stabilization in up to five directions
+                    <h4 class="mt-2"><b>Capture Anywhere, Anytime.</b></h4>
+                    <p class="w-100 line_height">With its compact and portable design, the Ricoh FF-70 is your ideal
+                        companion for photography on the move. Slip it into your pocket or bag effortlessly, and be
+                        ready to capture stunning 35mm film photos wherever your adventures take you. Enjoy the freedom
+                        to express your creativity on the go.
                     </p>
                 </div>
                 <div class="d-flex flex-column" style="width: 30%;">
                     <img src="imgs/1_shot_2.jpg" alt="" width="300" height="auto" class="fit_img rounded_borders_15">
-                    <h4 class="mt-2"><b>In the blink of an iris.</b></h4>
-                    <p class="w-100 line_height">Freeze time with shutter speeds as fast as 1/8000 of a second—fast
-                        enough to capture moments invisible to the naked eye. When shooting with wide aperture settings
-                        for shallow depth-of-field and blurred backgrounds, that speed can also be used to control your
-                        shot’s brightness.
+                    <h4 class="mt-2"><b>Precision at Your Fingertips.</b></h4>
+                    <p class="w-100 line_height">The Ricoh FF-70 boasts advanced autofocus technology, allowing you to
+                        capture fleeting moments with remarkable accuracy and speed. Never miss a shot as the camera
+                        swiftly locks onto subjects, ensuring sharp and well-focused images that truly reflect the
+                        essence of the moment.
                     </p>
                 </div>
             </div>
@@ -539,7 +545,7 @@
 
         <!-- Products GRID -->
 
-        <div class="container d-flex flex-column justify-content-center align-items-center mt-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center mt-5" id="our-product-list">
             <h2 class="my-3" style="font-weight: 900;">Our Products</h2>
             <div class="d-flex justify-content-xl-between justify-content-evenly mt-5"
                 style="transition: 1s ease; flex-wrap: wrap;" id="products_list">
@@ -600,11 +606,7 @@
                             <div class="d-flex flex-column justify-content-center align-items-center bg-white shadow">
                                 <p>Excellent</p>
                                 <div id="stars5" class="d-flex justify-content-evenly align-items-center w-100">
-                                    <!-- <img src="imgs/Star.svg" alt="" class="p-1 bg-success">
-                                        <img src="imgs/Star.svg" alt="" class="p-1 bg-success">
-                                        <img src="imgs/Star.svg" alt="" class="p-1 bg-success">
-                                        <img src="imgs/Star.svg" alt="" class="p-1 bg-success">
-                                        <img src="imgs/Star.svg" alt="" class="p-1 bg-success"> -->
+
                                     <div class='get-img p-1 bg-success'></div>
                                     <div class='get-img p-1 bg-success'></div>
                                     <div class='get-img p-1 bg-success'></div>
@@ -705,17 +707,17 @@
             <!-- CONTACT US START -->
 
         </div>
-        <div class="position-relative d-flex justify-content-between align-items-start rounded_borders"
+        <div class="position-relative d-flex  justify-content-between align-items-start rounded_borders"
             style="background-color: #102B26;" id="support_big_cam_img">
             <div class="w-100 p-5 text-white d-flex flex-column">
                 <h1><b>Got a question? We are here to help</b></h1>
                 <small class="mt-4">If you don’t find an answer in our FAQ page, please contact us below, our customer
                     support is available Monday to Friday: 9am- 5pm.</small>
                 <img src="imgs/review.png" width="120px" class="mt-4">
-                <div class="d-flex justify-content-start align-items-center mt-3">
+                <div class="d-flex flex-column flex-sm-row  justify-content-start align-items-center mt-3">
                     <a href="#" class="m-0 p-0 px-5 py-2 bg-white white_glowbox contact-us-btn"
                         style="border-radius: 25px;" id="contact-us-btn">Contact us</a>
-                    <small class="text-white-50 ms-4">You’ll get a response within 24 hours</small>
+                    <small class="text-white-50 ms-4 mt-3 mt-sm-0">You’ll get a response within 24 hours</small>
                 </div>
             </div>
             <div class="position-relative w-100">
@@ -840,22 +842,21 @@
 
             <div class="w-100 d-flex justify-content-evenly align-items-start mt-5">
                 <div class="d-flex justify-content-start align-items-start flex-column">
-                    <h4 class="m-0 mb-1">Main Menu</h4>
+                    <h6 class="m-0 mb-1">Main Menu</h6>
                     <p class="m-0 text-white-50 focus onTop">Shop</p>
                     <p class="m-0 text-white-50 about-us-btn focus">About us</p>
                     <p class="m-0 text-white-50 faqs-btn focus">FAQs</p>
                     <p class="m-0 text-white-50 contact-us-btn focus">Contact</p>
                 </div>
                 <div class="d-flex justify-content-start align-items-start flex-column">
-                    <h4 class="m-0 mb-1">Additional Information</h4>
+                    <h6 class="m-0 mb-1">Additional Information</h6>
                     <p class="m-0 text-white-50">Search</p>
                     <p class="m-0 text-white-50">My Account</p>
                     <p class="m-0 text-white-50">Shipping</p>
                     <p class="m-0 text-white-50">Refund Policy</p>
-                    <p class="m-0 text-white-50">Privacy Policy</p>
                 </div>
                 <div class="d-flex justify-content-start align-items-start flex-column">
-                    <h4 class="m-0 mb-1">Extra</h4>
+                    <h6 class="m-0 mb-1">Extra</h6>
                     <p class="m-0 text-white-50">Careers</p>
                     <p class="m-0 text-white-50">Press</p>
                     <p class="m-0 text-white-50">Story</p>
