@@ -88,26 +88,20 @@ marquee>* {
     align-items: center;
     padding: 1.3rem 0rem;
     border-bottom: #0000006c 2px solid;
-
     >div {
         width: 25%;
-
         img {
             height: 2rem !important;
         }
     }
-
     div:nth-of-type(2) {
         width: 50%;
-
         ul {
             display: flex;
             list-style: none;
-
             li {
                 margin-left: .5rem;
                 margin-right: .5rem;
-
                 a {
                     font-size: 1.2rem;
                 }

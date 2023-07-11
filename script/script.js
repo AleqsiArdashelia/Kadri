@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('.about-us-btn').on('click',(e)=>{
     e.preventDefault();
-    
     $('.about-us').toggleClass('c_hidden');
     window.scrollTo(0, 0);
   });
@@ -114,12 +113,10 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.FAQs-pos').toggleClass('c_hidden');
   });
 
-
   $('.contact-btn').on('click',(e)=>{
     e.preventDefault();
     $('.contact-pos').toggleClass('c_hidden');
     window.scrollTo(0, 0);
-
   });
 
   $('.contact-close').on('click',()=>{
@@ -134,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('.review-btn').on('click',(e)=>{
     e.preventDefault();
-    
     $('.review-pos').toggleClass('c_hidden');
   });
 
